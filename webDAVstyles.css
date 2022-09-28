@@ -1,0 +1,101 @@
+ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+ul li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    margin: 16px 8px;
+}
+ul li .fileIcon {
+    width: 100%;
+    height: 100px;
+}
+ul li a {
+    text-align: center;
+    word-break: break-word;
+    height: 2em;
+}
+
+.folder-svg:hover .folder-cover {
+    d: path("m0.5,6.5l15,0L15,13H1z");
+}
+svg path {
+    transition: 0.1s;
+}
+#bigViewDiv {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+#bigViewDiv .nav, #bigViewDiv .close {
+    position: fixed;
+    opacity: .3;
+}
+#bigViewDiv .nav:hover, #bigViewDiv .close:hover {
+    cursor: pointer;
+    opacity: .7;
+}
+#bigViewDiv .close {
+    height: 48px;
+    width: 48px;
+    top: 16px;
+    right: 16px;
+}
+#bigViewDiv .close::before, #bigViewDiv .close::after {
+    position: absolute;
+    content: '';
+    background-color: white;
+    height: 32px;
+    width: 2px;
+    top: 8px;
+    left: 23px;
+}
+#bigViewDiv .close::before {
+    transform: rotate(45deg);
+}
+#bigViewDiv .close::after {
+    transform: rotate(-45deg);
+}
+#bigViewDiv .close:hover::before, #bigViewDiv .close:hover::after {
+    background-color: #e01010;
+    height: 48px;
+    width: 4px;
+    top: 0;
+    left: 22px;
+}
+#bigViewDiv .nav {
+    border: 8px solid transparent;
+    border-top-color: white;
+    height: 16px;
+    width: 16px;
+    top: 50vh;
+}
+#bigViewDiv .prev {
+    left: 24px;
+    transform: rotate(-45deg);
+    border-left-color: white;
+}
+#bigViewDiv .next {
+    right: 24px;
+    transform: rotate(45deg);
+    border-right-color: white;
+}
+#mediaContainer > img,
+#mediaContainer > video {
+    max-width: 90vw;
+    max-height: 82vh;
+}
