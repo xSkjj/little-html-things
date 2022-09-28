@@ -4,5 +4,5 @@
     <rect x="2" y="4.5" height="8" width="12" fill="#eee"/>
     <rect x="1.75" y="3.75" height="0.5" width="3" fill="#eda"/>
     <rect x="3" y="5.5" height="0.5" width="10" fill="#ddd"/>
-    <path class="" d="m1,5l14,0L15,13H1z" fill="#fc6" />
+    <path class="folder-cover" d="m1,5l14,0L15,13H1z" fill="#fc6" />
 </svg>
