@@ -22,7 +22,6 @@ ul li a {
     word-break: break-word;
     height: 2em;
 }
-
 .folder-svg:hover .folder-cover {
     d: path("m0.5,6.5l15,0L15,13H1z");
 }
@@ -47,7 +46,7 @@ svg path {
 }
 #bigViewDiv .nav:hover, #bigViewDiv .close:hover {
     cursor: pointer;
-    opacity: .7;
+    opacity: .8;
 }
 #bigViewDiv .close {
     height: 48px;
