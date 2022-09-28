@@ -1,0 +1,20 @@
+html {
+    background-color: #222;
+    color: #eee;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+a {
+    color: #38f;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:visited {
+    color: #36f;
+}
