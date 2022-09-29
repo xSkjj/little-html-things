@@ -10,11 +10,10 @@ ul li {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 100px;
     margin: 16px 8px;
 }
 ul li .fileIcon {
-    width: 100%;
+    width: 100px;
     height: 100px;
 }
 ul li a {
@@ -70,7 +69,7 @@ svg path {
     transform: rotate(-45deg);
 }
 #bigViewDiv .close:hover::before, #bigViewDiv .close:hover::after {
-    background-color: #e01010;
+    background-color: #e02020;
     height: 48px;
     width: 4px;
     top: 0;
