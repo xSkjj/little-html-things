@@ -74,14 +74,13 @@
 
     document.querySelector("ul").addEventListener("click", (event) => {
         if (event.target.tagName.match(/img/i)) {
-            document.querySelector("#bigViewDiv #mediaContainer").innerHTML = "<img src='' alt=''>"
-            document.querySelector("#bigViewDiv #mediaContainer img").src = event.target.src
-            document.querySelector("#bigViewDiv").style.display = "flex"
+            document.querySelector("#mediaContainer").innerHTML = "<img src='' alt=''>"
+            document.querySelector("#mediaContainer img").src = event.target.src
         } else if (event.target.parentElement.querySelector("a").href.match(/\.(mov|mp4|ogg|webm)$/i)) {
-            document.querySelector("#bigViewDiv #mediaContainer").innerHTML = "<video controls src=''>"
-            document.querySelector("#bigViewDiv #mediaContainer video").src = event.target.parentElement.querySelector("a").href
-            document.querySelector("#bigViewDiv").style.display = "flex"
+            document.querySelector("#mediaContainer").innerHTML = "<video controls src=''>"
+            document.querySelector("#mediaContainer video").src = event.target.parentElement.querySelector("a").href
         }
+        document.querySelector("#bigViewDiv").style.display = "flex"
     })
 
     let i = -1
