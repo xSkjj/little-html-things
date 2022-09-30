@@ -11,17 +11,6 @@
 
 (_ => {
     'use strict'
-    let preloadStyle = document.createElement("style")
-    preloadStyle.innerHTML = `
-    html {
-        background-color: #222;
-        color: #eee;
-    }`
-    document.head.appendChild(preloadStyle)
-})();
-
-(_ => {
-    'use strict'
 
     // create custom favicon
     let favicon = document.createElement("link")

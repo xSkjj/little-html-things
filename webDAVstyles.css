@@ -11,6 +11,7 @@ ul li {
     justify-content: center;
     align-items: center;
     margin: 16px 8px;
+    width: 100px;
 }
 .fileIcon {
     width: 100px;
